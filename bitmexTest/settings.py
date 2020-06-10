@@ -32,13 +32,17 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'channels',
-    'wsserve',
+    'rest_framework',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'api.apps.ApiConfig',
+    'wsserve',
+
 ]
 
 MIDDLEWARE = [

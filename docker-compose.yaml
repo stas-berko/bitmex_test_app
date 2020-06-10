@@ -8,14 +8,6 @@
         - POSTGRES_USER=postgres
         - POSTGRES_PASSWORD=postgres
 
-    async_bm_service:
-      build: async_BM_service
-      command: python async_service.py
-      volumes:
-        - ./async_BM_service:/code
-      depends_on:
-        - bm_service
-
     bm_service:
       build: .
       command: bash docker-entrypoint.sh
@@ -25,3 +17,11 @@
         - "8000:8000"
       depends_on:
         - db
+
+    async_bm_service:
+      build: async_BM_service
+      command: python async_service.py
+      volumes:
+        - ./async_BM_service:/code
+      depends_on:
+        - bm_service
