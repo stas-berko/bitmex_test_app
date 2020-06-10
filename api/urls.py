@@ -4,6 +4,7 @@ from api import views
 
 urlpatterns = [
     path('orders/', views.OrderList.as_view()),
+    path('account/', views.AccountCreate.as_view()),
     path('orders/<str:pk>', views.OrderDetail.as_view()),
 ]
 

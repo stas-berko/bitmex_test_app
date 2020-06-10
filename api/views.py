@@ -7,11 +7,16 @@ from rest_framework.response import Response
 
 from .bitmex_config import Bitmex
 from .models import Order, Account
-from .serializers import OrderSerializer
+from .serializers import OrderSerializer, AccountSerializer
+
+
+class AccountCreate(generics.CreateAPIView):
+    serializer_class = AccountSerializer
+    queryset = Account.objects.all()
 
 
 class OrderList(mixins.ListModelMixin,
-                generics.GenericAPIView):
+                generics.CreateAPIView):
     serializer_class = OrderSerializer
 
     def get(self, request, *args, **kwargs):

@@ -5,11 +5,21 @@
 
 ## Quickstart
 First af all you should create create your Account 
-Access to django shell:
 
-    $ docker-compose exec bm_service python manage.py shell
+Query example
+
+    POST http://localhost:8000/account
+    Accept: */*
+    Cache-Control: no-cache
+    Content-Type: application/json
     
+    {
+      "name": "Market",
+      "api_key": "{api_key}",
+      "api_secret": "{api_secret}"
+    }    
      
+####Create new order.
 
 Query example:
     
