@@ -4,7 +4,7 @@
     $ docker-compose up
 
 ## Quickstart
-First af all you should create create your Account 
+First af all you should create your Account 
 
 Query example
 
