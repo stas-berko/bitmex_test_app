@@ -5,4 +5,4 @@ Django==3.0.7
 psycopg2-binary==2.8.5
 requests==2.23.0
 urllib3==1.25.9
-djangorestframework==3.11.0
+djangorestframework==3.11.2
