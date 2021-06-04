@@ -1,7 +1,7 @@
 bitmex==0.2.2
 channels==2.4.0
 daphne==2.5.0
-Django==3.0.7
+Django==3.1.9
 psycopg2-binary==2.8.5
 requests==2.23.0
 urllib3==1.25.9
